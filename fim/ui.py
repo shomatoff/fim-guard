@@ -85,7 +85,7 @@ class Window(QMainWindow):
         self._note_key = "live_note" if self.directory and self.db.history(self.directory) else "no_events" if self.directory else "choose"
         self.setMinimumSize(920, 650)
         self.resize(1250, 790)
-        self.setWindowTitle("File Integrity Monitor")
+        self.setWindowTitle("FIM Guard")
         self.setStyleSheet(STYLE)
         self.scan_requested.connect(self.scan)
         self._build()

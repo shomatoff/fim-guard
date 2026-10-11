@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-NAME = "File-Integrity-Monitor"
+NAME = "FIM-Guard"
 
 
 def main():

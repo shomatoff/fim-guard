@@ -1,4 +1,4 @@
-# File Integrity Monitor — o‘zbekcha qo‘llanma
+# FIM Guard — o‘zbekcha qo‘llanma
 
 FIM faqat o‘zingiz tanlagan jildlardagi fayllarni tekshiradi. SHA-256 boshlang‘ich holati yaratiladi; qo‘shilgan, o‘zgargan va o‘chirilgan fayllar SQLite’da saqlanadi. Dastur qo‘lda va jonli tekshiruv, pauza, hodisalar tarixi hamda JSON/CSV hisobotlarini qo‘llaydi.
 

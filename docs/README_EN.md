@@ -1,4 +1,4 @@
-# File Integrity Monitor — English guide
+# FIM Guard — English guide
 
 FIM checks the contents of files in folders you explicitly select. It creates a SHA-256 baseline and records added, modified and deleted paths in SQLite. The desktop interface supports manual checks, live watchdog notifications, pause/resume, history and JSON/CSV reports.
 

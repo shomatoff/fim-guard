@@ -30,16 +30,19 @@ jobs:
         include:
           - os: ubuntu-24.04
             platform: Linux
-            artifact: File-Integrity-Monitor-Linux-x64.tar.gz
+            artifact: FIM-Guard-Linux-x64.tar.gz
           - os: windows-latest
             platform: Windows
-            artifact: File-Integrity-Monitor-Windows-x64.zip
+            artifact: FIM-Guard-Windows-x64.zip
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Linux Qt dependencies
+        if: matrix.platform == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libgl1 libegl1 libx11-xcb1 libxcb-cursor0 libxkbcommon-x11-0 libdbus-1-3
       - run: python -m pip install -r requirements.txt
       - run: python -m pytest -q
         env:
@@ -66,4 +69,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           RELEASE_TAG: ${{ github.ref_name }}
-        run: gh release create "$RELEASE_TAG" packages/* --verify-tag --generate-notes --title "File Integrity Monitor $RELEASE_TAG"
+        run: gh release create "$RELEASE_TAG" packages/* --verify-tag --generate-notes --title "FIM Guard $RELEASE_TAG"

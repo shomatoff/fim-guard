@@ -1,6 +1,6 @@
-# File Integrity Monitor
+# FIM Guard
 
-[![Test and build](https://github.com/shomatoff/file-integrity-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/shomatoff/file-integrity-monitor/actions/workflows/ci.yml)
+[![Test and build](https://github.com/shomatoff/fim-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/shomatoff/fim-guard/actions/workflows/ci.yml)
 
 **EN:** A desktop tool that records SHA-256 baselines for selected folders and shows added, changed, and deleted files. It uses SQLite for event history and watchdog for live monitoring.
 
@@ -40,7 +40,7 @@
 
 ## Download packages / Paketlar / Пакеты
 
-After a successful tagged release, download the Windows ZIP or Linux TAR.GZ from [Releases](https://github.com/shomatoff/file-integrity-monitor/releases). Development packages appear under [Actions artifacts](https://github.com/shomatoff/file-integrity-monitor/actions). The two platforms are built on their own GitHub runners. See [platform instructions](docs/PLATFORMS.md). Packages are unsigned; no release exists until its CI job succeeds.
+After a successful tagged release, download the Windows ZIP or Linux TAR.GZ from [Releases](https://github.com/shomatoff/fim-guard/releases). Development packages appear under [Actions artifacts](https://github.com/shomatoff/fim-guard/actions). The two platforms are built on their own GitHub runners. See [platform instructions](docs/PLATFORMS.md). Packages are unsigned; no release exists until its CI job succeeds.
 
 ## Install and run / O‘rnatish / Установка
 

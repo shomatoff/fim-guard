@@ -1,3 +1,3 @@
-"""File Integrity Monitor."""
+"""FIM Guard."""
 
 __version__ = "1.0.0"

@@ -8,7 +8,7 @@ from fim.ui import run
 
 
 def main():
-    parser = argparse.ArgumentParser(description="File Integrity Monitor desktop application")
+    parser = argparse.ArgumentParser(description="FIM Guard desktop application")
     parser.add_argument("--db", type=Path, help="SQLite database path")
     parser.add_argument("--directory", type=Path, help="Preselect a directory")
     parser.add_argument("--lang", choices=("en", "uz", "ru"))
